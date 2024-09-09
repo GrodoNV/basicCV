@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    padding-left: 4px;
+    box-sizing: border-box; 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    padding-left: 4px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+ul ,li{
+    padding-left: 20px;
+}
+h3{
+    padding: 4px;
+    background-color: rgb(48, 47, 47);
+    color: white;
+}
+th, td {
+    width: 50%;
+    border: 3px solid #ddd;
+    padding: 0px;
+    margin: 0px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.profile-container {
+    text-align: center;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    border-radius: 10px;
+}
+
+.profile-img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit:cover; 
+    display: block;
+    margin: auto;
+}
+.lista-conectada {
+    padding-left: 15px; 
+    position: relative; 
+}
+.lista-conectada li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+.map {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Alinea el iframe al centro */
+    padding-bottom: 56.25%
+}
+
+.map iframe {
+    width: 100%; /* El iframe ocupará todo el ancho del contenedor */
+    height: 450px; /* Ajusta la altura según tus necesidades */
+    border: 0; /* Elimina el borde */
+}

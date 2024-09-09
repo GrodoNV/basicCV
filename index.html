@@ -3,115 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Juanito Perez</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Curriculum Vitae</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 3px solid #ddd;
-            padding: 8px;
-        }
-        .profile-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
+        
     </style>
 </head>
 <body>
     <table>
-        <tr>
-            <th colspan="2">Curriculum Vitae</th>
-        </tr>
-        <tr>
-            <td width="20%">
-                <img src="profile-placeholder.png" alt="Foto de perfil" class="profile-img">
-            </td>
-            <td>
+        <header>
+        <tr >
+            <th colspan="2" class="profile-container">
+                <img class="profile-img" src="https://st2.depositphotos.com/3369547/8161/v/450/depositphotos_81611508-stock-illustration-web-developer-design.jpg" alt="Foto de perfil" class="profile-img">
                 <h2>Juanito Perez</h2>
-                <p>Soy un estudiante...</p>
-            </td>
+                <p>Estudiante de la Umsa</p>
+            </th>
         </tr>
-        <tr>
-            <td>
-                <h3>Índice</h3>
+        </header>
+        
+        <article>
+            <tr>    
+                <td>
+                    
+                    <h3>Índice</h3>
+                    <ul class="lista-conectada">
+                        <li><a href="#info-personal">Datos Personales</a></li>
+                        <li><a href="#educacion">Formacion Academica</a></li>
+                        <li><a href="#experiencia">Experiencia Laboral</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#idiomas">Idiomas</a></li>
+                    </ul>
+                </td>
+            </tr>        
+            
+        </article>
+
+        <article>
+            <tr>
+                <td>
+                <h3 id="info-personal">DATOS PERSONALES</h3>    
+                <p>Fecha de nacimiento: 1 de enero de 1990</p>
+                <p>Dirección: Calle Falsa 123, Ciudad ###</p>
+                <p>Número de teléfono: 123456 </p>    
+                </td>
+            </tr>
+        </article>        
+                
+        <article>
+            <tr>
+                <td>
+                    <h3 id="educacion">FORMACION ACADEMICA</h3>
                 <ul>
-                    <li><a href="#info-personal">Información Personal</a></li>
-                    <li><a href="#experiencia">Experiencia Laboral</a></li>
-                    <li><a href="#educacion">Educación</a></li>
+                    <li>Licenciatura en Informatica - UMSA </li>
+                    <li>Maestria en ciencias de la computacion - UMSA </li>
                 </ul>
-            </td>
-            <td>
-                <h3 id="info-personal">Información Personal</h3>
-                <table>
+                </td>
+            </tr>
+        </article>  
+        <article>
+            <tr>
+                <td>
+                    <h3 id="experiencia">HABILIDADES</h3>
+                <table>    
                     <tr>
-                        <td>Fecha de nacimiento:</td>
-                        <td>1 de enero de 1990</td>
-                    </tr>
-                    <tr>
-                        <td>Dirección:</td>
-                        <td>Calle Falsa 123, Ciudad ###</td>
-                    </tr>
-                    <tr>
-                        <td>Número de teléfono:</td>
-                        <td>123456</td>
-                    </tr>
-                </table>
-
-                <h3 id="educacion">Educación</h3>
-                <table>
-                    <tr>
-                        <th>Título</th>
-                        <th>Institución</th>
-                        <th>Periodo</th>
-                    </tr>
-                    <tr>
-                        <td>Licenciatura en Juegos</td>
-                        <td>Universidad Mayor de San Andrés</td>
-                        <td>2012 - 2016</td>
-                    </tr>
-                    <tr>
-                        <td>Curso de Desarrollo Web</td>
-                        <td>Platzi</td>
-                        <td>2017</td>
-                    </tr>
-                </table>
-
-                <h3>Habilidades</h3>
-                <table>
-                    <tr>
-                        <th>Habilidad</th>
-                        <th>Nivel de Dominio</th>
+                        <th >Habilidad</th>
+                        <th >Nivel de Dominio</th>
                     </tr>
                     <tr>
                         <td>HTML</td>
                         <td>Avanzado</td>
                     </tr>
                     <tr>
-                        <td>React</td>
-                        <td>Intermedio</td>
+                        <td>CSS</td>
+                        <td>Avanzado</td>
                     </tr>
                 </table>
-
+                </td>
+            </tr>
+        </article> 
+        
+        <article>
+            <tr>
+                <td>
+                    <h3 id="idiomas">IDIOMAS</h3>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li>Espanol - nativo</li>
+                    <li>Ingles - Avanzado</li>
                 </ul>
-
-                <footer>
-                    <p>&copy; 2024 Juanito Perez. Todos los derechos reservados.</p>
-                </footer>
-            </td>
-        </tr>
+                </td>
+            </tr>
+        </article>
+        <article>
+            <tr>
+                <td>
+                    <h3>UBICACION</h3>
+                    <div class="map">
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1205.1192523951531!2d-68.11528031764979!3d-16.474776477288536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f2023a7c97bc9%3A0xe273cb488abc9761!2sC.%2020%201751%2C%20La%20Paz!5e0!3m2!1ses-419!2sbo!4v1725850291108!5m2!1ses-419!2sbo" 
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    </div>
+                </td>
+            </tr>
+        </article>
+    
     </table>
 </body>
 </html>
